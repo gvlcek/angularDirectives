@@ -1,0 +1,11 @@
+<ul *ngFor="let musico of musicos" [ngSwitch]="musico.banda">
+    <li *ngSwitchCase="'Travis'" class="travis">
+        <h4> {{ musico.nombre }} | {{ musico.banda }} </h4>
+    </li>
+    <li *ngSwitchCase="'Snow Patrol'" class="snowPatrol">
+        <h4> {{ musico.nombre }} | {{ musico.banda }} </h4>
+    </li>
+    <li *ngSwitchCase="'Keane'" class="keane">
+        <h4> {{ musico.nombre }} | {{ musico.banda }} </h4>
+    </li>
+</ul>
